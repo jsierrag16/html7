@@ -1,0 +1,93 @@
+.empresa{
+    text-align: center;
+}
+.logo{
+    grid-area: logo;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    text-align: end;
+}
+.nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    text-align: center;
+}
+.main{
+    grid-area: main;
+    height: 400px;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+}
+.grid-container {
+    background-color: rgb(152, 152, 231);
+    border-color: 1px solid rgb(94, 93, 93);
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 'logo    header  header  header '
+                         'nav     nav     nav     nav    '
+                         'main    main    main    main   '
+                         'footer  footer  footer  footer '; 
+}                       
+
+.grid-container div {
+    background-color: blueviolet;
+    border: 3px solid black;
+}
+@font-face{
+    font-family: Juan;
+    src: url(/FONT/Parkinsans/Parkinsans-VariableFont_wght.ttf);
+} 
+* {
+    font-family: Juan;
+}
+a{
+    text-decoration: none;
+    background-color: white;
+    padding: 2px;
+    margin: 5px;
+    font-weight: bold;
+}
+a:hover{
+    font-family: cursive;
+    background-color: black;
+    color: white;
+}
+#home:target{
+    display: block;
+}
+#somos{
+    display: none;
+}
+#somos:target{
+    display: block;
+}
+#productos{
+    display: none;
+}
+#productos:target{
+    display: block;
+}
+#contactanos{
+    display: none;
+}
+#contactanos:target{
+    display: block;
+}
+#home img {
+    width: auto; 
+    max-width: auto;
+    height: auto; 
+}
+.logo img{
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+}
